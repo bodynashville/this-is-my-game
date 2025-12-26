@@ -1,0 +1,532 @@
+  
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.rakkas-regular {
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .rubik-gemstones-regular {
+    font-family: "Rubik Gemstones", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    height: 100vh;
+    background-image: url(بودي.jpg);
+    border-radius: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.4);
+
+}
+
+
+.text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 70%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.text h1{
+    color: white;
+}
+.text p{
+    font-size: 40px;
+    color: rgba(255, 0, 0, 0.836);
+    text-shadow: -8px -2px 3px black;
+    padding-top: 100px;
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.text span{
+    color: rgb(255, 196, 0);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.text h1 .w{
+    color: black;
+    font-size: 37px;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    z-index: 100;
+}
+#navbar img {
+    width: 80px;
+    margin-left: 100px;
+    border-radius: 50%;
+    
+}
+#navbar ul{
+    display: flex;
+    margin-right: 100px;
+}
+#navbar ul li a {
+    padding: 15px 20px;
+    color: red;
+    font-weight: 600;
+    
+}
+#navbar ul li a:hover{
+    border-bottom: solid 2px black;
+}
+header *{
+    z-index: 10;
+}
+#menu{
+    width: 100%;
+    
+
+}
+.picture{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.picture span{
+    margin-top: 60px;
+    margin-right: 50px;
+    color: rgb(199, 29, 29);
+    font-family: "Rubik Gemstones", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.span{
+    margin-top: 40px;
+    margin-left: 60px;
+    color: red;
+}
+.left-menu{
+   
+    margin-left: 30px;
+    
+}
+.left-menu img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.left-menu p{
+    text-align: center;
+    margin-right: 30px;
+    color: black;
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.title{
+    text-align: center;
+    margin-top: 10px;
+}
+.title h2 {
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    
+}
+.title p{
+    font-size: 20px;
+    color: red;
+    text-shadow: -5px -5px 10px black;
+    text-align: center;
+}
+
+.right-menu{
+    text-align: right;
+    margin-right: 20px;
+}
+.right-menu img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.right-menu p{
+    text-align: center;
+    margin-right: 30px;
+    color: black;
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.price{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+
+}
+.name{
+    display: inline-block;
+    color: green;
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+.container-offers .names {
+    font-size: 23px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: green;
+}
+
+
+#offers{
+    
+    background: linear-gradient(rgb(49, 0, 0) , rgb(94, 5, 5));
+}
+.container-offers .price{
+    color: white;
+}
+.container-offers{
+    display: flex;
+    justify-content: space-between;
+}
+.container-offers .pa{
+    color: black;
+    font-family: "Rubik Gemstones", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.left-offers{
+    margin-left: 30px;
+}
+.left-offers img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    
+}
+.left-offers p {
+    text-align: center;
+    margin-right: 30px;
+    color: white;
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.right-offers{
+    margin-right: 30px;
+}
+.right-offers img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 300px;
+
+}
+.right-offers p {
+    text-align: center;
+    margin-left: 30px;
+    color: white;
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.offer{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: white;
+    padding-top: 20px;
+    
+}
+.offer span{
+    text-decoration-line: underline;
+    text-shadow: -7px -7px 20px black;  
+
+}
+.offer span:hover .letter{
+    transform: scale(1.6);
+    font-size: 75px;
+}
+
+.letter{
+    color: orangered;
+    text-decoration: solid white 1px;
+    font-size: 63px;
+    transition: 0.3s;
+}
+
+#add{
+    background: linear-gradient(  rgb(94, 5, 5) , rgb(49, 0, 0));
+}
+.container-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    
+}
+.container-add img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+#add h2{
+    text-align: right;
+    font-size: 35px;
+    margin-right: 4px;
+    color: white;
+    margin-top: 2px;
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container-add div .img1:hover {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    
+}
+.container-add p{
+    font-size: 20px;
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container-add div .img2:hover {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.container-add div .img3:hover {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.container-add div .img4:hover {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.container-add div .img5:hover {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.container-add div .img6:hover {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.container-add div .img7:hover {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.container-add .S {
+    font-size: 13px;
+    padding-top: 5px;
+    color: white;
+    font-family: "Rubik Gemstones", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+footer{
+    height: 3vh;
+    background-color: white;
+}
+i{
+    color: black;
+}
+#about {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+#about h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-top: 15px;
+}
+#about span {
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: rgb(135, 31, 231);
+}
+#about h3{
+    font-size: 24px;
+}
+#about i {
+    color: black;
+}
+.link {
+    display: inline;
+    margin-left: 20px;
+}
+.link i{
+    color: black;
+    font-size: 30px;
+}
+
+.link2 {
+    display: inline;
+}
+.link2 i{
+    color: blueviolet;
+    font-size: 30px;
+    margin-left: 4px;
+}
+.link3{
+    display: inline;
+    margin-left: 4px;
+}
+.link3 i{
+    color: red;
+    font-size: 30px;
+}
+.im {
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-right: 40px;
+    border: solid red 20px;
+    height: 140px;
+    border-radius: 20px;
+    box-shadow: -5px -5px 20px 10px black;
+}
+
+.im img {
+    width: 100px;
+    
+}
+footer{
+    background-color: #383848;
+    margin-top: 20px;
+}
+footer span {
+    margin-left: 20px;
+    color: white;
+}
+.links1 {
+    display: inline;
+}
+.links {
+    display: inline;
+    margin-left: 20px;
+}
+.links i {
+    color: black;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.link2s{
+     display: inline;
+ }  
+.link2s i {
+    color: blueviolet;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.link3s {
+    display: inline;
+}
+.link3s i {
+    color: red;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.link4s {
+    display: inline;
+}
+.link4s i {
+    color: green;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.link5s {
+    display: inline;
+}
+.link5s i {
+    color: rgb(11, 226, 104);
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.link6s {
+    display: inline;
+}
+.link6s i {
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+
+
+
+   
+
+
+
+
+    
+
+
+
+
+
+
+
+
