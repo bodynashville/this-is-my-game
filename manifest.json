@@ -1,0 +1,21 @@
+{
+  "name": "بودي الناشفيل دي لعبتي",
+  "short_name": "بودي",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "red",
+  "description": "مطعم فراخ",
+  "icons": [
+    {
+      "src": "photo/بودي.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "photo/بودي.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
